@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyCqjfIt9cPZV937eM7oobEwmKrTyExeHIk" type="text/javascript"></script>
+		<script async type="text/javascript">
+			var lat = 37.090240;
+			var lon = -95.712891;
+			var map = null;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: new google.maps.LatLng(lat, lon), 
+					zoom: 4, 
+                    gestureHandling: "none",
+                    disableDefaultUI: true,
+					mapTypeId: google.maps.MapTypeId.ROADMAP, 
+					mapTypeControl: false,
+					scrollwheel: false, 
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR 
+					},
+					navigationControl: true, 
+					navigationControlOptions: {
+						style: google.maps.NavigationControlStyle.ZOOM_PAN 
+					}
+				});
+                var marker0 = new google.maps.Marker({
+	                position: {lat: 50.94123256955327, lng: -113.97953114646242},
+	                map: map
+                });
+                var marker1 = new google.maps.Marker({
+	                position: {lat: 45.14920981234915, lng: -122.58697433134549},
+	                map: map
+                });
+                var marker2 = new google.maps.Marker({
+	                position: {lat: 38.60493514863197, lng: -121.44073616040559},
+	                map: map
+                });
+                var marker3 = new google.maps.Marker({
+	                position: {lat: 34.247544358709916, lng: -118.60054007403008},
+	                map: map
+                });
+                var marker4 = new google.maps.Marker({
+	                position: {lat: 34.097019344099564, lng: -111.93746475188175},
+	                map: map
+                });
+                var marker5 = new google.maps.Marker({
+	                position: {lat: 39.56802034293358, lng: -105.11431664503282},
+	                map: map
+                });
+                var marker6 = new google.maps.Marker({
+	                position: {lat: 32.63287729121035, lng: -97.21861375873286},
+	                map: map
+                });
+                var marker7 = new google.maps.Marker({
+	                position: {lat: 30.530759398570147, lng: -96.24055993180014},
+	                map: map
+                });
+                var marker8 = new google.maps.Marker({
+	                position: {lat: 38.393790674387034, lng: -85.4016188450705},
+	                map: map
+                });
+                var marker9 = new google.maps.Marker({
+	                position: {lat: 38.042115769137574, lng: -84.6262444874107},
+	                map: map
+                });
+                var marker10 = new google.maps.Marker({
+	                position: {lat: 40.65294095171566, lng: -81.7646557584907},
+	                map: map
+                });
+                var marker11 = new google.maps.Marker({
+	                position: {lat: 40.236789905209974, lng: -74.22736604501087},
+	                map: map
+                });
+                var marker12 = new google.maps.Marker({
+	                position: {lat: 41.92366952809018, lng: -73.0584384602957},
+	                map: map
+                });
+                var marker13 = new google.maps.Marker({
+	                position: {lat: 43.301982637336415, lng: -71.03296031607043},
+	                map: map
+                });
+                var marker14 = new google.maps.Marker({
+	                position: {lat: 45.30809477208435, lng: -72.67208497551682},
+	                map: map
+                });
+                var marker15 = new google.maps.Marker({
+	                position: {lat: 26.63590755856158, lng: -80.22395191839752},
+	                map: map
+                });
+
+                marker0.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/error.jpg");';
+                    document.getElementById("titre").innerHTML = "Andrew CARRUTHERS - Farrier";
+                    document.getElementById("description1").innerHTML = "33 Douglas Ridge Close";
+                    document.getElementById("description2").innerHTML = "T2Z 2M3 CALGARY";
+                    document.getElementById("description3").innerHTML = "CANADA";
+                    document.getElementById("description4").innerHTML = "Phone: 403-619-4592";
+                    document.getElementById("description5").innerHTML = "acarruthersfarrier@gmail.com";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker1.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/1.jpeg");';
+                    document.getElementById("titre").innerHTML = "VALLEY FARRIER SUPPLY";
+                    document.getElementById("description1").innerHTML = "709 W. Main Street, Building B";
+                    document.getElementById("description2").innerHTML = "OR 97038 MOLALLA";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: (503) 829-6968";
+                    document.getElementById("description5").innerHTML = "Fax: (503) 829-6970";
+                    document.getElementById("description6").innerHTML = "https://valleyfarrier.com/shop/";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker2.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/2.png");';
+                    document.getElementById("titre").innerHTML = "THE HORSESHOE BARN";
+                    document.getElementById("description1").innerHTML = "1223 Blumenfeld Drive";
+                    document.getElementById("description2").innerHTML = "CA 95815 SACRAMENTO";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: (916) 925-6534";
+                    document.getElementById("description5").innerHTML = "horseshoebarn@sbcglobal.net";
+                    document.getElementById("description6").innerHTML = "http://www.thehorseshoebarn.com";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker3.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/3.png");';
+                    document.getElementById("titre").innerHTML = "CANOGA FARRIER SUPPLY";
+                    document.getElementById("description1").innerHTML = "21608 Marilla St";
+                    document.getElementById("description2").innerHTML = "91311 CHATSWORTH";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 (818) 702-6375";
+                    document.getElementById("description5").innerHTML = "http://canogafarriersupply.com/";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker4.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/8.jpeg");';
+                    document.getElementById("titre").innerHTML = "Stockhoff`s Horseshoes Arizona";
+                    document.getElementById("description1").innerHTML = "10045 E Dynamite Blvd Ste 105";
+                    document.getElementById("description2").innerHTML = "Scottsdale, AZ 85262";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "";
+                    document.getElementById("description5").innerHTML = "";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker5.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/5.png");';
+                    document.getElementById("titre").innerHTML = "OLEO ACRES FARRIER & <br> BLACKSMITH SUPPLY";
+                    document.getElementById("description1").innerHTML = "10367 West Centennial Road";
+                    document.getElementById("description2").innerHTML = "80127 LITTLETON";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 303979 0446";
+                    document.getElementById("description5").innerHTML = "oafarriersupply@outlook.com";
+                    document.getElementById("description6").innerHTML = "http://www.OAFBS.COM";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker6.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/6.png");';
+                    document.getElementById("titre").innerHTML = "TEXAS FARRIER SUPPLY";
+                    document.getElementById("description1").innerHTML = "603 S. New Hope Road";
+                    document.getElementById("description2").innerHTML = "76060 KENNEDALE";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 817 478 6105";
+                    document.getElementById("description5").innerHTML = "sales@texasfarriersupply.com";
+                    document.getElementById("description6").innerHTML = "http://www.texasfarriersupply.com";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker7.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/7.jpeg");';
+                    document.getElementById("titre").innerHTML = "Equine Hoof Solutions LLC";
+                    document.getElementById("description1").innerHTML = "1638 Deer Park Dr";
+                    document.getElementById("description2").innerHTML = "77845 COLLEGE STATION";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 936 - 870 - 5707";
+                    document.getElementById("description5").innerHTML = "http://www.equinehoofsolutions.com";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker8.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/8.jpeg");';
+                    document.getElementById("titre").innerHTML = "Stockhoff`s Horseshoes La grange";
+                    document.getElementById("description1").innerHTML = "1801 Button Ct";
+                    document.getElementById("description2").innerHTML = "40031 La Grange";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "http://www.stockhoffsonline.com";
+                    document.getElementById("description5").innerHTML = "";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker9.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/8.jpeg");';
+                    document.getElementById("titre").innerHTML = "Stockhoff`s Horseshoes Lexington";
+                    document.getElementById("description1").innerHTML = "4981 Old US Hwy 60";
+                    document.getElementById("description2").innerHTML = "40510 Lexington";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 800-421-1002";
+                    document.getElementById("description5").innerHTML = "http://www.stockhoffsonline.com";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker10.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/10.jpeg");';
+                    document.getElementById("titre").innerHTML = "YODER FARRIER SUPPLY";
+                    document.getElementById("description1").innerHTML = "8900 Township Rd 652";
+                    document.getElementById("description2").innerHTML = "OH 44627 FREDERICKSBURG";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 (330) 471-1940";
+                    document.getElementById("description5").innerHTML = "Fax: +1 (330)-698-3200";
+                    document.getElementById("description6").innerHTML = "shorturl.at/DMQZ3";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker11.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/8.jpeg");';
+                    document.getElementById("titre").innerHTML = "Stockhoff`s Horseshoes New Jersey";
+                    document.getElementById("description1").innerHTML = "920 New Jersey 33 business #7";
+                    document.getElementById("description2").innerHTML = "07728 Freehold";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 800-421-1002";
+                    document.getElementById("description5").innerHTML = "http://www.stockhoffsonline.com";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker12.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/12.jpeg");';
+                    document.getElementById("titre").innerHTML = "Northeast Farrier Supply";
+                    document.getElementById("description1").innerHTML = "210 Holabird Ave, Winsted";
+                    document.getElementById("description2").innerHTML = "CT06098 WINSTED";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 860-379-8553";
+                    document.getElementById("description5").innerHTML = "https://www.northeastfarrier.com/";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker13.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/13.png");';
+                    document.getElementById("titre").innerHTML = "MEADER SUPPLY CORP.";
+                    document.getElementById("description1").innerHTML = "23 Meaderboro Rd.";
+                    document.getElementById("description2").innerHTML = "03867 ROCHESTER";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 603 332 3032";
+                    document.getElementById("description5").innerHTML = "meader@meadersupply.com";
+                    document.getElementById("description6").innerHTML = "";
+                    document.getElementById("description7").innerHTML = "";
+                });
+                marker14.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/14.png");';
+                    document.getElementById("titre").innerHTML = "Maréchalerie Bromont Inc.";
+                    document.getElementById("description1").innerHTML = "31-A, ch. des Carrières";
+                    document.getElementById("description2").innerHTML = "J2L 1S1 BROMONT QUEBEC";
+                    document.getElementById("description3").innerHTML = "CANADA";
+                    document.getElementById("description4").innerHTML = "Phone: 1-877-267-2759";
+                    document.getElementById("description5").innerHTML = "Fax: 1-450-534-2760";
+                    document.getElementById("description6").innerHTML = "cynthia@marechaleriebromont.com";
+                    document.getElementById("description7").innerHTML = "http://www.marechaleriebromont.com";
+                });
+                marker15.addListener("click", () => {
+                    document.getElementById("logo").style = 'background-image: url("/assets/images/15.jpg");';
+                    document.getElementById("titre").innerHTML = "PALM BEACH FARRIER SUPPLY, INC.";
+                    document.getElementById("description1").innerHTML = "3500 Fairlane Farms Rd. Suite #13";
+                    document.getElementById("description2").innerHTML = "33414 WELLINGTON FLORIDA";
+                    document.getElementById("description3").innerHTML = "USA";
+                    document.getElementById("description4").innerHTML = "Phone: +1 (561) 204-5022";
+                    document.getElementById("description5").innerHTML = "Fax: +1 (561) 204-5021";
+                    document.getElementById("description6").innerHTML = "palmbeachfs@comcast.net";
+                    document.getElementById("description7").innerHTML = "http://www.palmbeachfarriersupply.net/";
+                });
+			}
+			window.onload = function(){
+				initMap(); 
+			};
+		</script>
+		<title>Carte</title>
+	</head>
+	<body>
+        <div class="container">
+		    <div id="map"></div>
+            <div id="var">
+                <div class="acr" style="display: flex; align-items: center; justify-content: center; height: 20vh; width: 25vw; border-style: none none solid none; border-color: rgb(255, 203, 158); border-width: 2px;"><img src="/assets/images/acr.png" style="height: 20vh;" alt=""></div>
+                <div id="logo"></div>
+                <div class="containertext">
+                    <div class="titre" id="titre"></div>
+                    <div class="description" id="description1"></div>
+                    <div class="description" id="description2"></div>
+                    <div class="description" id="description3"></div>
+                    <div class="description" id="description4"></div>
+                    <div class="description" id="description5"></div>
+                    <div class="description" id="description6"></div>
+                    <div class="description" id="description7"></div>
+                </div>
+                <div class="containerlist"><a class="list" href="/list-retailers.html">Access the list of our retailers</a></div>
+            </div>
+        </div>
+	</body>
+</html>
